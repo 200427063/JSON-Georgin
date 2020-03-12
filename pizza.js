@@ -1,4 +1,4 @@
-let requestURL = 'https://github.com/200427063/JSON-Georgin/blob/master/pizza.json';
+let requestURL = 'https://200427063.github.io/JSON-Georgin/pizza.json';
 
 
 //create new XHR
@@ -28,7 +28,7 @@ pizzaTypes(plentyPizza);
 function pizzaTypes(jsonObj) {
   let pizzaTypes = jsonObj.pizzaTypes;
 
-  let section = document.queryselector('section');
+  let section = document.querySelector('section');
   for (let i = 0; i< pizzaTypes.length; i++){
 //build the new html element on our page
     let article = document.createElement('article');
@@ -39,7 +39,7 @@ function pizzaTypes(jsonObj) {
     let ul = document.createElement('ul')
 
 
-    img.setAttribute('src', 'https://github.com/200427063/JSON-Georgin/tree/master/assets'
+    img.setAttribute('src', 'https://200427063.github.io/JSON-Georgin/assets/'
   + pizzaTypes[i].image);
   img.setAttribute('alt', pizzaTypes[i].image);
   h2.textContent = pizzaTypes[i].name;
@@ -49,16 +49,16 @@ function pizzaTypes(jsonObj) {
   for(let j = 0; j<  toppings.length; j++) {
 
     let listItem = document.createElement('li');
-    listitem.textContent = toppings[j];
+    listItem.textContent = toppings[j];
     ul.appendChild(listItem);
   }
 
-  articel.appendChild(img);
-    articel.appendChild(h2);
-    articel.appendChild(p1);
-    articel.appendChild(p2);
-    articel.appendChild(ul);
-  articel.appendChild(article);
+  article.appendChild(img);
+    article.appendChild(h2);
+    article.appendChild(p1);
+    article.appendChild(p2);
+    article.appendChild(ul);
+  section .appendChild(article);
 
   }
 
