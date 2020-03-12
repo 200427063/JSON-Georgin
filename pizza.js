@@ -43,8 +43,8 @@ function pizzaTypes(jsonObj) {
   + pizzaTypes[i].image);
   img.setAttribute('alt', pizzaTypes[i].image);
   h2.textContent = pizzaTypes[i].name;
-  p1.textContent = 'Size' + pizzaTypes[i].size;
-  p2.textContent = 'Price' + pizzaTypes[i].Price;
+  p1.textContent = 'size' + pizzaTypes[i].size;
+  p2.textContent = 'price' + pizzaTypes[i].price;
   let toppings = pizzaTypes[i].toppings;
   for(let j = 0; j<  toppings.length; j++) {
 
